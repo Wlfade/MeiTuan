@@ -1,6 +1,6 @@
 # MeiTuan
 仿美团首页菜单功能
-- MTMenuView 菜单视图 Xib描述 
+- MTMenuView 菜单视图 Xib描述   
 class func menuView(icon:UIImage?,title:String,des:String) -> MTMenuView{}  //初始化类方法
 
 func addTarget(target:Any?,action:Selector){}  //按钮添加事件方法
