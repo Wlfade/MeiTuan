@@ -55,6 +55,14 @@ extension MTHomeVC {
 
         //1.创建pop
         let content = ContentVC()
+        
+        MTDataTool.getCategoryData { (datas: [MTCategoriesModel]) in
+            print(datas)
+            let lrms = MTDataBridgeTool.chageCategoryModel(categoryMs: datas)
+            content.leftRightModels = lrms
+        }
+        
+        
         let popver = UIPopoverController(contentViewController: content)
         currentpoper = popver
 

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4078A44B244DE305007D14EC /* MTLeftRightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4078A44A244DE305007D14EC /* MTLeftRightModel.swift */; };
+		4078A450244F479A007D14EC /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4078A44D244F479A007D14EC /* sorts.plist */; };
+		4078A451244F479A007D14EC /* gz.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4078A44E244F479A007D14EC /* gz.plist */; };
+		4078A452244F479A007D14EC /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4078A44F244F479A007D14EC /* categories.plist */; };
+		4078A454244F4822007D14EC /* MTCategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4078A453244F4822007D14EC /* MTCategoriesModel.swift */; };
+		4078A456244F4A51007D14EC /* MTDataTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4078A455244F4A51007D14EC /* MTDataTool.swift */; };
+		4078A458244F5256007D14EC /* MTDataBridgeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4078A457244F5256007D14EC /* MTDataBridgeTool.swift */; };
 		40A22344244C8A820085CBE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A22342244C8A820085CBE3 /* Main.storyboard */; };
 		40A22346244C8A880085CBE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A22345244C8A880085CBE3 /* Assets.xcassets */; };
 		40A22349244C8A880085CBE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A22347244C8A880085CBE3 /* LaunchScreen.storyboard */; };
@@ -39,6 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4078A44A244DE305007D14EC /* MTLeftRightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTLeftRightModel.swift; sourceTree = "<group>"; };
+		4078A44D244F479A007D14EC /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sorts.plist; sourceTree = "<group>"; };
+		4078A44E244F479A007D14EC /* gz.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = gz.plist; sourceTree = "<group>"; };
+		4078A44F244F479A007D14EC /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
+		4078A453244F4822007D14EC /* MTCategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTCategoriesModel.swift; sourceTree = "<group>"; };
+		4078A455244F4A51007D14EC /* MTDataTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTDataTool.swift; sourceTree = "<group>"; };
+		4078A457244F5256007D14EC /* MTDataBridgeTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTDataBridgeTool.swift; sourceTree = "<group>"; };
 		40A22339244C8A820085CBE3 /* MeiTuanPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeiTuanPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A22343244C8A820085CBE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40A22345244C8A880085CBE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,6 +98,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4078A449244DE2EC007D14EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4078A44A244DE305007D14EC /* MTLeftRightModel.swift */,
+				4078A453244F4822007D14EC /* MTCategoriesModel.swift */,
+				4078A457244F5256007D14EC /* MTDataBridgeTool.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4078A44C244F479A007D14EC /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				4078A44D244F479A007D14EC /* sorts.plist */,
+				4078A44E244F479A007D14EC /* gz.plist */,
+				4078A44F244F479A007D14EC /* categories.plist */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		40A22330244C8A820085CBE3 = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +196,7 @@
 		40A22372244C8BC70085CBE3 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				4078A455244F4A51007D14EC /* MTDataTool.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -169,8 +204,8 @@
 		40A22373244C8BC70085CBE3 /* MTHome */ = {
 			isa = PBXGroup;
 			children = (
+				4078A449244DE2EC007D14EC /* Model */,
 				40A22374244C8BC70085CBE3 /* Controller */,
-				40A22375244C8BC70085CBE3 /* Model */,
 				40A22376244C8BC70085CBE3 /* View */,
 			);
 			path = MTHome;
@@ -186,13 +221,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		40A22375244C8BC70085CBE3 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		40A22376244C8BC70085CBE3 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +233,7 @@
 		40A2237A244C8C2F0085CBE3 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				4078A44C244F479A007D14EC /* JSON */,
 				40A22342244C8A820085CBE3 /* Main.storyboard */,
 				40A22345244C8A880085CBE3 /* Assets.xcassets */,
 				40A22347244C8A880085CBE3 /* LaunchScreen.storyboard */,
@@ -317,6 +346,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4078A452244F479A007D14EC /* categories.plist in Resources */,
+				4078A450244F479A007D14EC /* sorts.plist in Resources */,
+				4078A451244F479A007D14EC /* gz.plist in Resources */,
 				40A22381244C95B40085CBE3 /* MTMenuView.xib in Resources */,
 				40A22385244CA63A0085CBE3 /* ContentVC.xib in Resources */,
 				40A22349244C8A880085CBE3 /* LaunchScreen.storyboard in Resources */,
@@ -346,9 +378,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4078A44B244DE305007D14EC /* MTLeftRightModel.swift in Sources */,
 				40A2237F244C95910085CBE3 /* MTMenuView.swift in Sources */,
 				40A22377244C8BC70085CBE3 /* AppDelegate.swift in Sources */,
 				40A22384244CA63A0085CBE3 /* ContentVC.swift in Sources */,
+				4078A458244F5256007D14EC /* MTDataBridgeTool.swift in Sources */,
+				4078A456244F4A51007D14EC /* MTDataTool.swift in Sources */,
+				4078A454244F4822007D14EC /* MTCategoriesModel.swift in Sources */,
 				40A2237D244C91E60085CBE3 /* MTHomeVC.swift in Sources */,
 				40A22379244C8BC70085CBE3 /* SceneDelegate.swift in Sources */,
 			);
