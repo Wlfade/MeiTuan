@@ -64,4 +64,19 @@ class MTDataBridgeTool: NSObject {
         
         return resultMs
     }
+    class func chageSortModel(sortModels:[MTSortModel])->([MTLeftRightModel]){
+        var resultMs = [MTLeftRightModel]()
+        
+        for sortM in sortModels{
+            let lrM = MTLeftRightModel()
+            resultMs.append(lrM)
+
+            lrM.title = sortM.label
+            
+
+        }
+        
+        return resultMs
+
+    }
 }

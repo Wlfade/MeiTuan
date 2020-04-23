@@ -8,10 +8,20 @@
 
 import UIKit
 
+protocol ContentVCDelegate:NSObjectProtocol {
+    func contentVCLeftLRModel(lrm:MTLeftRightModel)
+
+    func contentVCRightLRModel(lrm:MTLeftRightModel)
+    
+}
+
 class ContentVC: UIViewController {
 
+    weak var delegate:ContentVCDelegate?
+    
     @IBOutlet weak var leftTableView: UITableView!
     @IBOutlet weak var rightTableView: UITableView!
+    
     
     //数据源
     var leftRightModels : [MTLeftRightModel] = [MTLeftRightModel](){
@@ -65,17 +75,17 @@ extension ContentVC : UITableViewDelegate,UITableViewDataSource{
                 //刷新右边表格
                 rightTableView.reloadData()
                 preferredContentSize = CGSize(width: 300, height: 500)
-            }else{
-                print(model.title as Any)
-                preferredContentSize = CGSize(width: 150, height: 500)
+                delegate?.contentVCLeftLRModel(lrm: model)
 
+            }else{
+                preferredContentSize = CGSize(width: 150, height: 500)
+                delegate?.contentVCLeftLRModel(lrm: model)
             }
         }
         
         if tableView == rightTableView {
             let model = currentLRM.subMenue![indexPath.row]
-            print(model.title as Any)
-
+            delegate?.contentVCRightLRModel(lrm: model)
         }
     }
 }

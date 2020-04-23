@@ -55,5 +55,30 @@ class MTDataTool: NSObject {
         }
         result(models)
     }
+    
+    //获取 排序数据模型
+    class func getSortData(result:([MTSortModel]) ->()){
+        //1.获取categories.plist
+        guard let path = Bundle.main.path(forResource: "sorts.plist", ofType: nil) else{
+            result([MTSortModel]())
+            return
+        }
+        
+        //1.获取里面的内容
+        guard let dicArray = NSArray(contentsOfFile: path) else {
+            result([MTSortModel]())
+            return
+        }
+        var models = [MTSortModel]()
+        for dic in dicArray {
+            let dicResult = dic as! [String : AnyObject]
+            let model = MTSortModel(dic: dicResult)
+            models.append(model)
+            
+            //解析子菜单
+        }
+        result(models)
+    }
+
 }
  

@@ -16,7 +16,13 @@ enum LRType : Int {
 
 class MTLeftRightModel: NSObject {
     
-    var type : LRType?
+    var type : LRType {
+        if image != nil && title != nil {
+            return .ImageAndTitle
+        }else{
+            return .Title
+        }
+    }
     
     var image : UIImage?
     var title : String?
