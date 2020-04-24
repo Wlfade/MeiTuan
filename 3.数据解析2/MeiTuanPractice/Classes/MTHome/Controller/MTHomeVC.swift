@@ -10,6 +10,9 @@ import UIKit
 
 class MTHomeVC: UIViewController {
 
+    var currentMenu : MTMenuView?
+    
+    
     var currentpoper : UIPopoverController?
     
     override func viewDidLoad() {
@@ -55,6 +58,7 @@ extension MTHomeVC {
 
         //1.创建pop
         let content = ContentVC()
+        content.delegate = self as? ContentVCDelegate
         
         MTDataTool.getCategoryData { (datas: [MTCategoriesModel]) in
             print(datas)
@@ -68,7 +72,7 @@ extension MTHomeVC {
 
         //2.弹出
         let barItem = navigationItem.leftBarButtonItems![1]
-        
+        currentMenu = barItem.customView as! MTMenuView
         popver.present(from: barItem, permittedArrowDirections: .any, animated: true)
         
         
@@ -79,7 +83,8 @@ extension MTHomeVC {
 
         //1.创建pop
          let content = ContentVC()
-        
+        content.delegate = self as? ContentVCDelegate
+
         //读取数据
         MTDataTool.getAddRessData { (datas:[MTAddressModel]) in
             print(datas)
@@ -93,7 +98,8 @@ extension MTHomeVC {
         currentpoper = popver
          //2.弹出
          let barItem = navigationItem.leftBarButtonItems![2]
-         
+         currentMenu = barItem.customView as! MTMenuView
+
          popver.present(from: barItem, permittedArrowDirections: .any, animated: true)
          
          
@@ -104,14 +110,61 @@ extension MTHomeVC {
 
         //1.创建pop
          let content = ContentVC()
+        content.delegate = self as? ContentVCDelegate
+
+        //读取数据
+//        MTDataTool.getAddRessData { (datas:[MTAddressModel]) in
+//            print(datas)
+//
+//            let lrms = MTDataBridgeTool.chageAddressModel(addressModels: datas)
+//            content.leftRightModels = lrms
+//        }
+        
+        MTDataTool.getSortData { (datas:[MTSortModel]) in
+            let lrms = MTDataBridgeTool.chageSortModel(sortModels: datas)
+            content.leftRightModels = lrms
+        }
+
+        
          let popver = UIPopoverController(contentViewController: content)
         currentpoper = popver
+        
+        
 
          //2.弹出
          let barItem = navigationItem.leftBarButtonItems![3]
-         
+         currentMenu = barItem.customView as! MTMenuView
+
          popver.present(from: barItem, permittedArrowDirections: .any, animated: true)
          
          
+    }
+}
+
+extension MTHomeVC : ContentVCDelegate{
+    
+    
+    func contentVCLeftLRModel(lrm: MTLeftRightModel) {
+        print("hahah"+lrm.title!)
+        
+        currentMenu?.image = lrm.image
+        currentMenu?.title = lrm.title
+//        currentMenu?. = lrm.title
+        if lrm.subMenue != nil {
+            let firstModel = lrm.subMenue!.first
+            currentMenu?.subTitle = firstModel!.title
+        }else{
+            currentMenu?.subTitle = ""
+
+        }
+        
+    }
+    
+    func contentVCRightLRModel(lrm: MTLeftRightModel) {
+        print("hahah"+lrm.title!)
+        
+        currentMenu?.image = lrm.image
+        currentMenu?.subTitle = lrm.title
+        
     }
 }

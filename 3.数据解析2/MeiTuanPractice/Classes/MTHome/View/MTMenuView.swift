@@ -18,6 +18,34 @@ class MTMenuView: UIView {
     
     @IBOutlet weak var desLabel: UILabel!
     
+//    var lrM : MTLeftRightModel{
+//        didSet{
+//            
+//        }
+//    }
+    var image: UIImage?{
+        didSet{
+            if image != nil{
+                iconImageView.image = image
+            }
+        }
+    }
+    
+    var title : String? {
+        didSet{
+            titleLabel.text = title
+        }
+    }
+    
+    var subTitle:String? {
+        didSet{
+            desLabel.text = subTitle
+        }
+    }
+    
+    
+    
+    
     class func menuView(icon:UIImage?,title:String,des:String) -> MTMenuView{
         let view = (Bundle.main.loadNibNamed("MTMenuView", owner: nil, options: nil)?.first as? MTMenuView)!
         view.iconImageView.image = icon

@@ -14,6 +14,7 @@
 		4078A454244F4822007D14EC /* MTCategoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4078A453244F4822007D14EC /* MTCategoriesModel.swift */; };
 		4078A456244F4A51007D14EC /* MTDataTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4078A455244F4A51007D14EC /* MTDataTool.swift */; };
 		4078A458244F5256007D14EC /* MTDataBridgeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4078A457244F5256007D14EC /* MTDataBridgeTool.swift */; };
+		4078A45A2451B7F0007D14EC /* MTSortModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4078A4592451B7F0007D14EC /* MTSortModel.swift */; };
 		40A22344244C8A820085CBE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A22342244C8A820085CBE3 /* Main.storyboard */; };
 		40A22346244C8A880085CBE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A22345244C8A880085CBE3 /* Assets.xcassets */; };
 		40A22349244C8A880085CBE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A22347244C8A880085CBE3 /* LaunchScreen.storyboard */; };
@@ -54,6 +55,7 @@
 		4078A453244F4822007D14EC /* MTCategoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTCategoriesModel.swift; sourceTree = "<group>"; };
 		4078A455244F4A51007D14EC /* MTDataTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTDataTool.swift; sourceTree = "<group>"; };
 		4078A457244F5256007D14EC /* MTDataBridgeTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MTDataBridgeTool.swift; path = ../../MTHome/Model/MTDataBridgeTool.swift; sourceTree = "<group>"; };
+		4078A4592451B7F0007D14EC /* MTSortModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTSortModel.swift; sourceTree = "<group>"; };
 		40A22339244C8A820085CBE3 /* MeiTuanPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeiTuanPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40A22343244C8A820085CBE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40A22345244C8A880085CBE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				4078A44A244DE305007D14EC /* MTLeftRightModel.swift */,
 				4078A453244F4822007D14EC /* MTCategoriesModel.swift */,
 				4E14275B24518E45007017AA /* MTAddressModel.swift */,
+				4078A4592451B7F0007D14EC /* MTSortModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				4E14275C24518E45007017AA /* MTAddressModel.swift in Sources */,
 				40A2237D244C91E60085CBE3 /* MTHomeVC.swift in Sources */,
 				40A22379244C8BC70085CBE3 /* SceneDelegate.swift in Sources */,
+				4078A45A2451B7F0007D14EC /* MTSortModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
