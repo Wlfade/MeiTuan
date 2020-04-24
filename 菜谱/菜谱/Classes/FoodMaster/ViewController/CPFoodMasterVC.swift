@@ -8,23 +8,53 @@
 
 import UIKit
 
+let kTypeChang = "TYPECHANGE"
+
+
 class CPFoodMasterVC: UITableViewController {
+
+    var typeMs: [CPTypeModel] = [CPTypeModel]() {
+        didSet{
+            tableView.reloadData()
+        }
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        typeMs = CPDataTool.getTypeData()
+        self.view.backgroundColor = .red
     }
     
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return typeMs.count
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
+    
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellId = "type"
+        var cell = tableView.dequeueReusableCell(withIdentifier: cellId)
+        if cell == nil {
+            cell = UITableViewCell.init(style: .default, reuseIdentifier: cellId)
+        }
+
+        let typeModel = typeMs[indexPath.row]
+        cell!.textLabel?.text = typeModel.name
+
+        return cell!
+
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let type = typeMs[indexPath.row]
+        
+        //通过通知传值
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: kTypeChang), object: type)
+        
+    }
 
 }

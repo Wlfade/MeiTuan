@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40F4A7722453209700AC0B3C /* CPTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F4A7712453209700AC0B3C /* CPTypeModel.swift */; };
+		40F4A775245333F900AC0B3C /* CPFoodDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F4A774245333F900AC0B3C /* CPFoodDetailModel.swift */; };
+		40F4A77A24533C1700AC0B3C /* CPWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F4A77824533C1700AC0B3C /* CPWebViewController.swift */; };
+		40F4A77B24533C1700AC0B3C /* CPWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40F4A77924533C1700AC0B3C /* CPWebViewController.xib */; };
+		40F4A77D2453400F00AC0B3C /* Html in Resources */ = {isa = PBXBuildFile; fileRef = 40F4A77C2453400F00AC0B3C /* Html */; };
 		4EA64810245297250038B76A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA6480E245297250038B76A /* Main.storyboard */; };
 		4EA64812245297260038B76A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EA64811245297260038B76A /* Assets.xcassets */; };
 		4EA64815245297260038B76A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA64813245297260038B76A /* LaunchScreen.storyboard */; };
@@ -31,11 +36,15 @@
 		4EA64B932452B99E0038B76A /* type_9_foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EA648432452B99B0038B76A /* type_9_foods.plist */; };
 		4EA64B942452B99E0038B76A /* type_5_foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EA648442452B99B0038B76A /* type_5_foods.plist */; };
 		4EA64B952452B99E0038B76A /* type_12_foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EA648452452B99B0038B76A /* type_12_foods.plist */; };
-		4EA64ED32452BAC20038B76A /* Html in Resources */ = {isa = PBXBuildFile; fileRef = 4EA64ED22452BAC20038B76A /* Html */; };
 		4EA64ED52452E7DA0038B76A /* CPDataTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA64ED42452E7DA0038B76A /* CPDataTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40F4A7712453209700AC0B3C /* CPTypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPTypeModel.swift; sourceTree = "<group>"; };
+		40F4A774245333F900AC0B3C /* CPFoodDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFoodDetailModel.swift; sourceTree = "<group>"; };
+		40F4A77824533C1700AC0B3C /* CPWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPWebViewController.swift; sourceTree = "<group>"; };
+		40F4A77924533C1700AC0B3C /* CPWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CPWebViewController.xib; sourceTree = "<group>"; };
+		40F4A77C2453400F00AC0B3C /* Html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Html; sourceTree = "<group>"; };
 		4EA64805245297250038B76A /* 菜谱.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "菜谱.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA6480F245297250038B76A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EA64811245297260038B76A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,7 +71,6 @@
 		4EA648432452B99B0038B76A /* type_9_foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = type_9_foods.plist; sourceTree = "<group>"; };
 		4EA648442452B99B0038B76A /* type_5_foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = type_5_foods.plist; sourceTree = "<group>"; };
 		4EA648452452B99B0038B76A /* type_12_foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = type_12_foods.plist; sourceTree = "<group>"; };
-		4EA64ED22452BAC20038B76A /* Html */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Html; path = "../../../../../../../Volumes/Mac Only/学习资料/iOS大神班第5期高清版/11 - 美团 & QQ音乐 & 微博(欢迎加入加我微信 hao22221111进微信群/1216视频/1216-iPad2/预习代码/03-UISplistViewController/04-UISplistViewController/菜谱/Html"; sourceTree = "<group>"; };
 		4EA64ED42452E7DA0038B76A /* CPDataTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPDataTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +85,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40F4A7702453207D00AC0B3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40F4A7712453209700AC0B3C /* CPTypeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		40F4A773245333E500AC0B3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				40F4A774245333F900AC0B3C /* CPFoodDetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4EA647FC245297250038B76A = {
 			isa = PBXGroup;
 			children = (
@@ -116,25 +140,10 @@
 		4EA6481D24529CB30038B76A /* FoodMaster */ = {
 			isa = PBXGroup;
 			children = (
-				4EA6481E24529CB30038B76A /* Model */,
-				4EA6481F24529CB30038B76A /* View */,
+				40F4A7702453207D00AC0B3C /* Model */,
 				4EA6482024529CB30038B76A /* ViewController */,
 			);
 			path = FoodMaster;
-			sourceTree = "<group>";
-		};
-		4EA6481E24529CB30038B76A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		4EA6481F24529CB30038B76A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		4EA6482024529CB30038B76A /* ViewController */ = {
@@ -148,31 +157,18 @@
 		4EA6482124529CB30038B76A /* FoodDetail */ = {
 			isa = PBXGroup;
 			children = (
-				4EA6482224529CB30038B76A /* Model */,
-				4EA6482324529CB30038B76A /* View */,
+				40F4A773245333E500AC0B3C /* Model */,
 				4EA6482424529CB30038B76A /* ViewController */,
 			);
 			path = FoodDetail;
-			sourceTree = "<group>";
-		};
-		4EA6482224529CB30038B76A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		4EA6482324529CB30038B76A /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		4EA6482424529CB30038B76A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				4EA6483124529F390038B76A /* CPFoodDetailViewController.swift */,
+				40F4A77824533C1700AC0B3C /* CPWebViewController.swift */,
+				40F4A77924533C1700AC0B3C /* CPWebViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -217,7 +213,7 @@
 		4EA648332452B99A0038B76A /* 菜谱 */ = {
 			isa = PBXGroup;
 			children = (
-				4EA64ED22452BAC20038B76A /* Html */,
+				40F4A77C2453400F00AC0B3C /* Html */,
 				4EA648342452B99A0038B76A /* Plist */,
 			);
 			path = "菜谱";
@@ -309,6 +305,7 @@
 				4EA64B932452B99E0038B76A /* type_9_foods.plist in Resources */,
 				4EA64B8D2452B99E0038B76A /* type_1_foods.plist in Resources */,
 				4EA64B8F2452B99E0038B76A /* type_6_foods.plist in Resources */,
+				40F4A77B24533C1700AC0B3C /* CPWebViewController.xib in Resources */,
 				4EA64B942452B99E0038B76A /* type_5_foods.plist in Resources */,
 				4EA64B872452B99E0038B76A /* food_types.plist in Resources */,
 				4EA64B8E2452B99E0038B76A /* type_16_foods.plist in Resources */,
@@ -320,10 +317,10 @@
 				4EA64B8C2452B99E0038B76A /* type_8_foods.plist in Resources */,
 				4EA64B862452B99E0038B76A /* type_15_foods.plist in Resources */,
 				4EA64B902452B99E0038B76A /* type_11_foods.plist in Resources */,
+				40F4A77D2453400F00AC0B3C /* Html in Resources */,
 				4EA64B892452B99E0038B76A /* type_7_foods.plist in Resources */,
 				4EA64B922452B99E0038B76A /* type_3_foods.plist in Resources */,
 				4EA64B912452B99E0038B76A /* type_14_foods.plist in Resources */,
-				4EA64ED32452BAC20038B76A /* Html in Resources */,
 				4EA64810245297250038B76A /* Main.storyboard in Resources */,
 				4EA64B8A2452B99E0038B76A /* type_13_foods.plist in Resources */,
 				4EA64B952452B99E0038B76A /* type_12_foods.plist in Resources */,
@@ -339,8 +336,11 @@
 			files = (
 				4EA6483224529F390038B76A /* CPFoodDetailViewController.swift in Sources */,
 				4EA6482D24529CB30038B76A /* SceneDelegate.swift in Sources */,
+				40F4A775245333F900AC0B3C /* CPFoodDetailModel.swift in Sources */,
 				4EA6482B24529CB30038B76A /* AppDelegate.swift in Sources */,
+				40F4A77A24533C1700AC0B3C /* CPWebViewController.swift in Sources */,
 				4EA64ED52452E7DA0038B76A /* CPDataTool.swift in Sources */,
+				40F4A7722453209700AC0B3C /* CPTypeModel.swift in Sources */,
 				4EA6483024529F240038B76A /* CPFoodMasterVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +487,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/菜谱/Classes/Other/System/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,6 +505,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/菜谱/Classes/Other/System/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
